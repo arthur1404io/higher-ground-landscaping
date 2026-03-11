@@ -69,6 +69,7 @@ a { text-decoration:none; color:inherit; transition:all .3s ease; }
 
 /* ===== HERO ===== */
 .hero { position:relative; min-height:80vh; display:flex; align-items:center; overflow:hidden; background:var(--hg-forest-deep); }
+.hero-grid { display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center; padding-top:80px; padding-bottom:80px; }
 .hero-bg { position:absolute; inset:0; background-size:cover; background-position:center; }
 .hero-overlay { position:absolute; inset:0; background:linear-gradient(135deg,rgba(40,40,40,.92) 0%,rgba(70,77,75,.75) 50%,rgba(40,40,40,.65) 100%); }
 .hero .container { position:relative; z-index:2; padding:80px 24px; }
@@ -261,6 +262,8 @@ a { text-decoration:none; color:inherit; transition:all .3s ease; }
     .grid-3 { grid-template-columns:repeat(2,1fr); }
     .grid-4 { grid-template-columns:repeat(2,1fr); }
     .about-grid,.service-detail,.booking-grid { grid-template-columns:1fr; gap:40px; }
+    .hero-grid { grid-template-columns:1fr; }
+    .hero-visual { display:none; }
     .footer-grid { grid-template-columns:repeat(2,1fr); }
     .hero h1 { font-size:2.8rem; }
 }
